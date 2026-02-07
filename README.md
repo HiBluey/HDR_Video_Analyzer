@@ -4,7 +4,7 @@
 ![FFmpeg](https://img.shields.io/badge/Dependency-FFmpeg-green)
 ![License](https://img.shields.io/badge/license-MIT-grey)
 
-**HDR Analyzer Pro** is a high-performance Python tool designed to analyze brightness (Nits) and color gamut coverage (Rec.709 / P3 / Rec.2020) of HDR video files.
+**HDR Video Analyzer** is a high-performance Python tool designed to analyze brightness (Nits) and color gamut coverage (Rec.709 / P3 / Rec.2020) of HDR video files.
 
 
 ## 🛠️ Requirements
