@@ -1,4 +1,4 @@
-# HDR Analyzer Pro 📊
+# HDR Video Analyzer 📊
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![FFmpeg](https://img.shields.io/badge/Dependency-FFmpeg-green)
