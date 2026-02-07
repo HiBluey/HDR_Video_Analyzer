@@ -6,19 +6,6 @@
 
 **HDR Analyzer Pro** is a high-performance Python tool designed to analyze brightness (Nits) and color gamut coverage (Rec.709 / P3 / Rec.2020) of HDR video files.
 
-Unlike typical analyzers that rely on slow RGB conversions or incorrect scaling, this tool uses **native 10-bit YUV 4:2:0 reading** combined with **NumPy vectorization** to deliver industrial-grade accuracy and speed.
-
-## 🚀 Key Features
-
-* **Native Performance**: Reads raw `yuv420p10le` data directly from FFmpeg pipes, reducing I/O bandwidth by 50% compared to RGB conversion methods.
-* **Ultrafast Subsampling**: Optional "Subsampling Mode" (physical slicing `[::2, ::2]`) processes 4K video at 1080p speeds without interpolation ringing or peak brightness loss.
-* **Strict 16:9 Logic**: Automatically pads videos (e.g., 2.35:1 movies) to a standard 3840x2160 16:9 canvas with black bars, ensuring "Average Nits" calculations align with standard display definitions.
-* **Advanced Color Science**:
-    * Implements SMPTE ST 2084 (PQ) EOTF curve.
-    * Uses Rec.2020 luminance coefficients.
-    * **Dual-Threshold Noise Filter**: Filters out sensor noise in dark scenes using both Luminance ($Y \ge 1.0$ nits) and Color Energy ($X+Y+Z > 0.005$) thresholds to prevent false "Out-of-Gamut" readings.
-* **Visualization**: Generates professional dual-chart reports (Brightness Waveform + Gamut Stacked Plot).
-* **Re-plot Capable**: Can import existing `.csv` files to adjust charts without re-analyzing the video.
 
 ## 🛠️ Requirements
 
